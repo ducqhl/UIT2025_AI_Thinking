@@ -1,5 +1,20 @@
 # A Comprehensive MLOps Architecture Framework for Real-Time Financial Fraud Detection Systems
 
+## Team 8
+
+| Student ID | Student Name |
+|------------|--------------|
+| 25410034 | Lê Quang Hoài Đức |
+| 25410150 | Nguyễn Minh Trọng |
+| 25410056 | Lã Xuân Hồng |
+| 25410066 | Nguyễn Duy Khang |
+| 25410088 | Trần Thanh Long |
+| 25410104 | Nguyễn Minh Nhật |
+
+## Acknowledgments
+
+This document was developed with assistance from ChatGPT for enhance descriptions and analyze section details.
+
 ## 1. Introduction
 
 This article presents a comprehensive MLOps architecture framework developed for Bank A's real-time fraud detection system, designed to enable continuous deployment, monitoring, and maintenance of machine learning models for credit card fraud detection. The framework addresses key challenges including data drift, model degradation, scalability requirements, and regulatory compliance while maintaining the agility required for rapid response to emerging fraud patterns.
@@ -760,9 +775,3 @@ The framework presented provides a solid foundation for building robust, scalabl
 5. Wang, Y., et al. (2023). "Data Drift Detection and Adaptation in Real-time ML Systems." *Proceedings of the International Conference on Data Engineering*, pp. 1123-1134.
 
 ---
-
-*Corresponding Author: [Author Name], [Institution], [Email]*
-
-*Received: [Date]; Accepted: [Date]; Published: [Date]*
-
-*© 2025 [Institution]. All rights reserved.*
