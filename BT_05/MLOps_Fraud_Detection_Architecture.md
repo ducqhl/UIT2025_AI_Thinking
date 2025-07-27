@@ -12,7 +12,7 @@ This article presents a comprehensive MLOps architecture framework developed for
 
 <div style="text-align: center; page-break-inside: avoid;">
 
-<img src="./MLOps_Architecture.svg" alt="MLOps Architecture Framework" style="max-width: 95%; max-height: 85vh; object-fit: contain;" />
+<img src="./MLOps_Architecture_enhance.svg" alt="MLOps Architecture Framework" style="max-width: 95%; max-height: 85vh; object-fit: contain;" />
 
 *Figure 1: Comprehensive MLOps Architecture Framework for Real-time Fraud Detection*
 
@@ -758,3 +758,11 @@ The framework presented provides a solid foundation for building robust, scalabl
 4. Smith, J., & Johnson, A. (2022). "Security and Privacy Challenges in MLOps for Financial Services." *Journal of Financial Technology and Cybersecurity*, 8(4), 234-251.
 
 5. Wang, Y., et al. (2023). "Data Drift Detection and Adaptation in Real-time ML Systems." *Proceedings of the International Conference on Data Engineering*, pp. 1123-1134.
+
+---
+
+*Corresponding Author: [Author Name], [Institution], [Email]*
+
+*Received: [Date]; Accepted: [Date]; Published: [Date]*
+
+*© 2025 [Institution]. All rights reserved.*
