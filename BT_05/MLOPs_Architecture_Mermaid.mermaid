@@ -1,0 +1,144 @@
+graph TB
+    %% Data Sources
+    subgraph "Data Sources"
+        A[Real-time Transaction Stream]
+        B[Historical Transaction Data]
+        C[Customer Profile Data]
+        D[External Fraud Databases]
+    end
+
+    %% Data Engineering Layer
+    subgraph "Data Engineering"
+        E[Data Ingestion Pipeline]
+        F[Feature Engineering]
+        G[Data Validation & Quality]
+        H[Feature Store]
+        HH[Data Versioning & Lineage]
+    end
+
+    %% ML Development
+    subgraph "ML Development"
+        I[Data Analysis & EDA]
+        J[Model Experiments]
+        K[Model Training]
+        L[Model Validation]
+    end
+
+    %% Model Registry & Versioning
+    subgraph "Model Management"
+        M[Model Registry]
+        N[Model Versioning]
+        NN[Experiment Tracking]
+        O[A/B Testing Framework]
+        OO[Model Lineage & Metadata]
+    end
+
+    %% Deployment Pipeline
+    subgraph "CI/CD Pipeline"
+        P[Automated Testing]
+        Q[Model Packaging]
+        R[Staging Deployment]
+        S[Production Deployment]
+    end
+
+    %% Production Serving
+    subgraph "Production Serving"
+        T[Real-time API Gateway]
+        U[Model Serving Infrastructure]
+        V[Prediction Cache]
+        W[Fraud Scoring Service]
+    end
+
+    %% Monitoring & Observability
+    subgraph "Monitoring & Observability"
+        X[Model Performance Monitor]
+        Y[Data Drift Detection]
+        Z[Model Drift Detection]
+        AA[Alerting System]
+        BB[Performance Dashboards]
+    end
+
+    %% Feedback Loop
+    subgraph "Feedback & Governance"
+        CC[Fraud Investigation Results]
+        DD[Model Governance]
+        EE[Compliance & Audit]
+        FF[Retraining Triggers]
+    end
+
+    %% Data Flow Connections
+    A --> E
+    B --> E
+    C --> E
+    D --> E
+    
+    E --> F
+    F --> G
+    G --> H
+    H --> HH
+    
+    HH --> I
+    H --> I
+    I --> J
+    J --> K
+    K --> L
+    
+    L --> M
+    M --> N
+    N --> NN
+    NN --> OO
+    OO --> O
+    
+    O --> P
+    P --> Q
+    Q --> R
+    R --> S
+    
+    S --> T
+    T --> U
+    U --> V
+    V --> W
+    
+    %% Real-time serving
+    A --> T
+    H --> U
+    
+    %% Monitoring connections
+    U --> X
+    A --> Y
+    U --> Z
+    X --> AA
+    Y --> AA
+    Z --> AA
+    AA --> BB
+    
+    %% Feedback loops
+    W --> CC
+    CC --> H
+    CC --> HH
+    CC --> FF
+    FF --> K
+    
+    X --> DD
+    DD --> EE
+    
+    %% Versioning connections
+    HH --> NN
+    NN --> HH
+    
+    %% Styling
+    classDef dataSource fill:#e1f5fe
+    classDef processing fill:#f3e5f5
+    classDef mlDev fill:#e8f5e8
+    classDef deployment fill:#fff3e0
+    classDef serving fill:#ffebee
+    classDef monitoring fill:#f1f8e9
+    classDef feedback fill:#fce4ec
+    
+    class A,B,C,D dataSource
+    class E,F,G,H,HH processing
+    class I,J,K,L,M,N,NN,O,OO mlDev
+    class P,Q,R,S deployment
+    class T,U,V,W serving
+    class X,Y,Z,AA,BB monitoring
+    class CC,DD,EE,FF feedback
